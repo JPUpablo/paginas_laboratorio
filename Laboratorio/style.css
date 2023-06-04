@@ -1,0 +1,130 @@
+:root {
+  --color-principal: #1b1b32;
+  --color-secundario: #f5f6f7;
+  --title-font-family: "Lato", sans-serif;
+  --text-font-family: "Roboto Serif", serif;
+  --title-font-size: 2.5rem;
+
+  --text-font-size: 1.5rem;
+  --text-cards-fonts-size: 1.2rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: var(--color-principal);
+  color: var(--color-secundario);
+}
+
+header > h1 {
+  margin: 0;
+  font-size: var(--title-font-size);
+}
+.divisor-header {
+  margin: 0;
+  height: 5px;
+  background-color: black;
+  box-shadow: 1px 3px 8px gray;
+}
+main {
+  width: 90%;
+  height: auto;
+  margin: 0px auto;
+}
+main > h2 {
+  color: var(--color-principal);
+  font-size: calc(var(--title-font-size) - 0.3rem);
+  text-align: center;
+  background-color: #f5f6f7;
+  margin: 10px 0 10px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+main > .main-ingresos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main > .main-ingresos h3 {
+  font-size: var(--text-font-size);
+  font-family: var(--text-font-family);
+}
+main > .main-ingresos .main-personas:first-of-type {
+  background-color: var(--color-principal);
+  color: var(--color-secundario);
+}
+main > .main-ingresos .main-personas:nth-of-type(2) {
+  background-color: var(--color-secundario);
+  color: var(--color-principal);
+}
+.main-ingresos > .main-personas {
+  flex-basis: 50%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.main-ingresos > .main-personas > form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.main-ingresos > .main-personas label {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.main-ingresos > .main-personas input {
+  width: 40%;
+  margin-bottom: 10px;
+}
+.main-ingresos > .main-personas select {
+  margin-bottom: 10px;
+}
+.main-ingresos > .main-personas input::placeholder {
+  text-align: center;
+  color: black;
+  font-style: italic;
+}
+.main-personas .warning {
+  background-color: rgb(122, 34, 34);
+  color: var(--color-secundario);
+}
+.main-ingresos > .main-personas input[type="button"] {
+  margin: 0 auto;
+  width: 30%;
+  margin-top: 20px;
+  height: 30px;
+}
+.contenedor-datos {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  text-align: center;
+}
+.datos-pacientes {
+  height: auto;
+  background-color: var(--color-secundario);
+  padding: 20px;
+}
+.datos-doctores {
+  height: auto;
+  background-color: var(--color-principal);
+  color: var(--color-secundario);
+  padding: 20px;
+}
